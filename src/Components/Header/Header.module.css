@@ -1,0 +1,10 @@
+
+.links{
+    display: block;
+    padding: 0.75rem 0 0.75rem 0.75rem;
+    
+}
+.shadow{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+.basketCount {top: -10px; right: -10px; min-width: 20px;}

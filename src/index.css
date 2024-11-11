@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Shabnam;
+    src: url(assets/fonts/Shabnam.eot);
+    src: url(assets/fonts/Shabnam.ttf);
+    src: url(assets/fonts/Shabnam.woff);
+    src: url(assets/fonts/Shabnam.woff2);
+}
+@font-face {
+    font-family: fontello;
+    src: url(./assets/fonts/fontello.woff2);
+}
+
+:root{
+
+    --color-div:#E2E2E2;
+}
+html,body{
+    font-family: Shabnam;
+    direction: rtl;
+}
+.navbar-link {
+    border-bottom: 2px solid transparent; /* بردر شفاف */
+    transition: border-color 0.3s ease; /* انیمیشن تغییر رنگ */
+  }
+  
+  .navbar-link:hover {
+    border-color: #FE5F55; /* رنگ موردنظر هنگام هاور */
+  }
+.shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+.navHover{
+    border-bottom: 3px #FE5F55 solid;
+}
+.icon-location:before { content: '\e90e'; }
+.icon-phone:before { content: '\e907';}
+.hover-icon:hover {
+    color: #0A295A;
+    transition: all ease-in-out .2s;
+}
+.hover-btn:hover {
+    background-color: #0A295A;
+    color: #fff;
+    transition: all ease-in-out .2s;
+}
+.icon-basket:before { content: '\e820'; } 
+
+.icon-search-normal:before { content: '\e806'; 
+      }
+      .icon-up-open:before{
+        content: '\e803';
+      }
+      .icon-search-normal:before,.icon-up-open::before,.icon-basket:before,.icon-basket:before,.icon-phone:before,.icon-location:before,.icon-clock:before{
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: never;
+      
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        /*margin-right: .2em;*/
+        text-align: center;
+        /* opacity: .8; */
+      
+        /* For safety - reset parent styles, that can break glyph codes*/
+        font-variant: normal;
+        text-transform: none;
+      
+        /* fix buttons height, for twitter bootstrap */
+        line-height: 1em;
+      
+        /* Animation center compensation - margins should be symmetric */
+        /* remove if not needed 
+        margin-left: .2em;*/
+      
+        /* you can be more comfortable with increased icons size */
+        /* font-size: 120%; */
+      
+        /* Font smoothing. That was taken from TWBS */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      
+        /* Uncomment for 3D effect */
+        /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ } 
+        .icon-clock:before { content: '\e910'; 
+           
+      }
