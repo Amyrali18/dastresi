@@ -20,3 +20,13 @@
     height: 100%;
     object-fit: cover;
   }
+  .swiper-pagination-bullet {
+    background-color: white; 
+    width: 12px;
+    height: 12px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: black;
+  }
+  

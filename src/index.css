@@ -36,6 +36,7 @@ html,body{
 .navHover{
     border-bottom: 3px #FE5F55 solid;
 }
+.icon-percent:before { content: '\f295'; }
 .icon-location:before { content: '\e90e'; }
 .icon-phone:before { content: '\e907';}
 .hover-icon:hover {
@@ -54,7 +55,7 @@ html,body{
       .icon-up-open:before{
         content: '\e803';
       }
-      .icon-search-normal:before,.icon-up-open::before,.icon-basket:before,.icon-basket:before,.icon-phone:before,.icon-location:before,.icon-clock:before{
+      .icon-percent:before,.icon-search-normal:before,.icon-up-open::before,.icon-basket:before,.icon-basket:before,.icon-phone:before,.icon-location:before,.icon-clock:before{
         font-family: "fontello";
         font-style: normal;
         font-weight: normal;
