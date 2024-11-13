@@ -1,32 +1,34 @@
 import axios from "axios";
 import useSWR from "swr";
+import Countdown from "./Countdown/Countdown";
 
 const DailyOff = () => {
-    const fetcher = (url) => axios.get(url).then((res) => res.data);
-    const { data: dailyOffData, error } = useSWR(
-      "https://amyrali18.github.io/dastresi-git/dailyOff.json",
-      fetcher
-    );
-   
-    
-    return ( 
-        <>
-        <div className="mt-20 max-w-screen-xl mx-auto rounded-xl px-4 bg-[#E2E2E2]">
-            <div className="offTop flex flex-row justify-between">
-            <div className="flex items-center gap-2 font-bold text-4xl">
-                <i className="icon-percent text-[#FE5F55] "></i>
-                <span className="text-[#757575]">تخفیف‌های روزانه دسترسی</span>
+  const fetcher = (url) => axios.get(url).then((res) => res.data);
+  const { data: dailyOffData, error } = useSWR(
+    "https://amyrali18.github.io/dastresi-git/dailyOff.json",
+    fetcher
+  );
 
-            </div>
-            <div>timer</div>
-            </div>
-            <div className="bottom flex flex-row">
-                <a href="#" className="flex flex-col"></a>
-                
-            </div>
+  return (
+    <>
+      <div className="mt-20 max-w-screen-xl mx-auto rounded-xl px-12 bg-[#E2E2E2]">
+        <div className="offTop flex flex-row justify-between">
+          <div className="flex items-center gap-2 font-bold text-4xl">
+            <i className="icon-percent text-[#FE5F55] "></i>
+            <span className="text-[#757575]">تخفیف‌های روزانه دسترسی</span>
+          </div>
+          <Countdown />
         </div>
-        </>
-     );
-}
- 
+        <div className="bottom flex flex-row">
+          {/* {dailyOffData.map((item) => {
+            if (item.id <= 2)  
+            
+            
+          })} */}
+        </div>
+      </div>
+    </>
+  );
+};
+
 export default DailyOff;

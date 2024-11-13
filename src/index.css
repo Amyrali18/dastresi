@@ -55,6 +55,26 @@ html,body{
       .icon-up-open:before{
         content: '\e803';
       }
+      .icon-arrow-down:before { content: '\e923'; 
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: never;
+      
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+    
+        text-align: center;
+       
+        font-variant: normal;
+        text-transform: none;
+      
+     
+        line-height: 1em;
+      }
       .icon-percent:before,.icon-search-normal:before,.icon-up-open::before,.icon-basket:before,.icon-basket:before,.icon-phone:before,.icon-location:before,.icon-clock:before{
         font-family: "fontello";
         font-style: normal;

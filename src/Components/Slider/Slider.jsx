@@ -27,7 +27,7 @@ const Slider = () => {
         pagination={{ clickable: true,type:'bullets',dynamicBullets:true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         modules={[Pagination , Autoplay]}
-        className="mySwiper mt-44 w-4/5 rounded-2xl mx-auto"
+        className="mySwiper mt-44 w-4/5 rounded-2xl mx-auto -z-10"
       >
         {sliderData.map((item) => (
           <SwiperSlide key={item.id}>

@@ -22,10 +22,10 @@ const Navbar = () => {
               {item.title}
             </a>
             {item.submenu && (
-              <ul className="absolute right-0 top-full mt-1 pt-2  w-40 bg-white rounded-md shadow-lg opacity-0 transition-opacity duration-300 invisible group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100">
+              <ul className="absolute right-0 top-full mt-1 pt-2 !z-[10000] w-40 bg-white rounded-md shadow-lg opacity-0 transition-opacity duration-300 invisible group-hover:visible group-hover:opacity-100 hover:visible hover:opacity-100">
                 {item.submenu.map((subItem) => (
-                  <li key={item.id} className="px-1 py-2 w-full hover:bg-gray-200 hover:text-blue-950 hover:opacity-100">
-                    <a href={subItem.link} className="text-gray-500 text-xs text-right w-full hover:text-blue-950 transition-colors duration-300">
+                  <li key={item.id} className="px-1 py-2 w-full hover:bg-gray-200 !z-[10000] hover:text-blue-950 hover:opacity-100">
+                    <a href={subItem.link} className="text-gray-500 text-xs text-right w-full !z-[10000] hover:text-blue-950 transition-colors duration-300">
                       {subItem.title}
                     </a>
                   </li>
