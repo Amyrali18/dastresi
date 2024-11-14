@@ -3,14 +3,14 @@ import Footer from "../../Components/Footer/Footer";
 import Slider from "../../Components/Slider/Slider";
 import DailyOff from "../../Components/Header/dailyOff/DailyOff";
 const Home = () => {
-    return ( 
+    return (
         <>
-       <Header/>
-       <Slider/>
-       <DailyOff/>
-       {/* <Footer/> */}
+            <Header />
+            <Slider />
+            <DailyOff />
+            <Footer/>
         </>
-     );
+    );
 }
- 
+
 export default Home;
