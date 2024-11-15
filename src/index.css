@@ -21,6 +21,10 @@
 html,body{
     font-family: Shabnam;
     direction: rtl;
+    scroll-behavior: smooth;
+}
+*{
+  box-sizing: border-box;
 }
 .navbar-link {
     border-bottom: 2px solid transparent; /* بردر شفاف */

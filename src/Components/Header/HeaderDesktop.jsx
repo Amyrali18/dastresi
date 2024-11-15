@@ -3,7 +3,7 @@ import Navbar from "./Navbar/Navbar";
 const HeaderDesktop = () => {
   return (
     <>
-      <div className="mx-auto px-4 mt-6 max-w-screen-xl flex flex-col">
+      <div className="mx-auto pt-6 px-4 max-w-screen-xl flex flex-col">
         <div className="headerTop flex flex-row justify-between gap-4 items-center">
           <div className="flex flex-row gap-8 items-center w-2/3">
             <a href="#">
