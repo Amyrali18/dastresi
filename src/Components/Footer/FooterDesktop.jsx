@@ -1,8 +1,9 @@
+import "./footer.css"
 const FooterDesktop = () => {
   return (
     <>
       <div className="w-full bg-[#e2e2e2]  ">
-        <div className="flex flex-row p-6 mx-auto justify-between max-w-screen-xl text-sm text-[#000000de]">
+        <div className="flex flex-row p-6 mx-auto justify-between max-w-screen-xl text-sm text-[#000000de] media-query">
           <div className="lg:mb-0 flex items-center">
             <span className="flex gap-2 items-center text-[#757575]">
               <i className="icon-phone text-lg"></i>
@@ -32,7 +33,7 @@ const FooterDesktop = () => {
         </div>
       </div>
       <div className="FooterMain w-full bg-[#F5F5F5] ">
-        <div className="flex flex-row mx-auto max-w-screen-xl px-4 py-8 gap-8">
+        <div className="flex flex-row mx-auto max-w-screen-xl px-4 py-8 gap-8 media-query">
           <div className=" justify-center items-center flex flex-col gap-8 pt-8 lg:pt-0">
             <img
               className="max-w-[190px]"

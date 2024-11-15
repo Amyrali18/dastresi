@@ -29,4 +29,8 @@
   .swiper-pagination-bullet-active {
     background-color: black;
   }
-  
+  .swiper-wrapper{
+    overflow-x: visible;
+    max-width: 100%;
+    position: static;
+  }

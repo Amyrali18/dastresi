@@ -1,0 +1,36 @@
+.daily-off{
+    width: 100%;
+    max-height: auto;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    overflow: hidden;
+    .daily-off-box{
+        text-align: right;
+        font-size: 17px;
+        padding: 7px;
+        
+        .image-card{
+            width: 65%;
+            img{
+                object-fit: cover;
+                max-width: 100%;
+            }
+        }
+        .old-off-price{
+            display: flex;
+            justify-content: space-between;
+            .old-price{
+                color: gray;
+                font-size: 11.5px;
+                text-decoration: line-through;
+            }
+            .off-count{
+                color: red;
+                font-size: 11.5px;
+            }
+        }
+    }
+    
+}
